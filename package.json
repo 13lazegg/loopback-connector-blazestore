@@ -1,0 +1,30 @@
+{
+  "name": "loopback-connector-blazestore",
+  "version": "1.0.0",
+  "description": "Firestore connector for the LoopBack framework.",
+  "main": "index.js",
+  "repository": "git@github.com:13lazegg/loopback-connector-blazestore.git",
+  "author": {
+    "name": "Rodrigo Gonzalez Godoy",
+    "email": "style.blaze@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --fix .",
+    "posttest": "nsp check",
+    "test": "mocha -G --timeout 10000 --require test/init.js test/*.test.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^5.4.2",
+    "loopback-connector": "^4.4.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "eslint": "^4.9.0",
+    "eslint-config-loopback": "^8.0.0",
+    "loopback-datasource-juggler": "^3.13.0",
+    "mocha": "^4.0.1",
+    "nsp": "^2.8.1",
+    "should": "^13.1.2"
+  }
+}
